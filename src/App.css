@@ -1,0 +1,84 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 1rem;
+}
+
+.expression-input {
+  border-width: 0;
+  border-color: 0;
+  border-bottom-color: #09d3ac;
+  border-bottom-width: 3px;
+  min-height: 8vh;
+  width: 100%;
+  background-color: rgba(192, 192, 192, .05);
+  color: #FFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-left: .5rem;
+  font-size: calc(12px + 1vmin);
+  letter-spacing: .2rem;
+}
+
+.App-link {
+  color: #09d3ac;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.light {
+  animation-name: demo;
+  -webkit-animation-name: demo;
+  animation-duration: 750ms;
+  -moz-animation-duration: 750ms;
+  -webkit-animation-duration: 750ms;
+  animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.evaluate-button {
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 2.5rem;
+  float: right;
+  margin-top: 1rem;
+  background-color: #FFF;
+  border-color: transparent;
+}
+
+.evaluate-button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.column {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+@keyframes demo {
+  0% {
+      color: #09d3ac;
+  }
+  100% {
+      color: #FFF;
+  }
+}
